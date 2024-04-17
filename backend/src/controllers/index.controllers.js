@@ -1,5 +1,5 @@
 const indexController = (req,res)=>{
-         res.send("It is the index page");
+    res.status(200).json({message:"Ok"});
 }
 
 export default indexController;

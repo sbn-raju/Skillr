@@ -5,14 +5,25 @@ import dotenv from 'dotenv';
 //Configuration of the middlewares
 dotenv.config();
 
-// Exporting the functions
+
+//Importing the Database Module 
+import connectionOfDatabase from "./db/connect.db.js";
+
+//Importing the MongoDB models
+// import User from './models/user.models.js';
+
+// Importing the Routes 
 import indexRoute from "./routes/index.routes.js";
+import registerRoute from "./routes/register.routes.js";
 
+//Connecting to the MongoDb Database
 
+connectionOfDatabase();
 
 
 //Init the app
 const app = express();
+app.use(express.json());
 
 
 //App is listening
@@ -22,6 +33,7 @@ app.listen(process.env.PORT||8080,()=>{
 
 //All the APIs Calls
 app.get("/",indexRoute);
+app.post("/register",registerRoute);
 
 
 
