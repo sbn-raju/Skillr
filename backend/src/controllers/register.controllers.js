@@ -32,6 +32,7 @@ const registerController = async(req,res)=>{
             expiresIn :"1h"
         }
     );
+    console.log(token);
     User.token = token
     User.password = undefined
     return res.status(200).json(User)
