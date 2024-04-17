@@ -1,8 +1,6 @@
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import User from "../models/user.models.js";
-import { json } from "express";
-
 
 const registerController = async(req,res)=>{
     // console.log("this is the Register pages");
@@ -41,9 +39,6 @@ const registerController = async(req,res)=>{
         console.log(err);
         return res.status(404).send("page not avaliable");
     }
-    
-   
-    // res.status(200).json({message:"Ok"});
 }
 
 export default registerController;
