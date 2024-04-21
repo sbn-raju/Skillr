@@ -1,13 +1,11 @@
-import './App.css'
-import { Login } from './pages/Login'
+  import React from 'react'
+import Login from './pages/Login'
 
-function App() {
+  const App = () => {
     return (
-    <>
-     {/* <h1 className='font-bold underline bg-red-700'>Hello World</h1> */}
-     <Login/>
-    </>
-  )
-}
-
-export default App
+      <> 
+      <Login/>
+      </>
+    )
+  }
+  export default App
