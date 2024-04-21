@@ -1,4 +1,4 @@
-import User from "../models/user.models.js";
+import User from "../models/studentUser.models.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 
@@ -42,9 +42,6 @@ const loginController = async(req,res)=>{
             message:"Page Not Found"
         });
     }
-    
-
-    
 }
 
 export default loginController;

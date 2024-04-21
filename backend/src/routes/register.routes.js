@@ -1,7 +1,12 @@
 import { Router } from "express";
-import registerController from "../controllers/register.controllers.js";
+import {studentRegisterController, facultyRegisterController} from "../controllers/register.controllers.js";
+
+
 const route = Router();
 
-route.post("/register",registerController);
+//Student Route
+route.post("/api/studentRegister",studentRegisterController);
+//Faculty Route
+route.post("/api/facultyRegister",facultyRegisterController);
 
 export default route;

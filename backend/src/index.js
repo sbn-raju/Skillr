@@ -15,7 +15,7 @@ import connectionOfDatabase from "./db/connect.db.js";
 
 // Importing the Routes 
 import indexRoute from "./routes/index.routes.js";
-import registerRoute from "./routes/register.routes.js";
+import route from "./routes/register.routes.js"
 import loginRoute from "./routes/login.routes.js";
 
 
@@ -39,7 +39,8 @@ app.listen(process.env.PORT||8080,()=>{
 
 //All the APIs Calls/Routes
 app.get("/",indexRoute);
-app.post("/register",registerRoute);
+app.post("/api/StudentRegister",route);
+app.post("/api/FacultyRegister",route);
 app.post("/login",loginRoute);
 
 
