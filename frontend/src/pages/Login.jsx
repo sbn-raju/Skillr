@@ -2,9 +2,11 @@ import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
+import Navbar from "../components/Navbar";
 const Login = () => {
   return (
     <>
+    <Navbar/>
       <div className="w-full h-full flex justify-center items-center mt-20 mb-20">
         <form className="w-1/3 h-full flex justify-center items-center flex-col border-2 border-gray-700 rounded-2xl">
           <h1 className="text-4xl pb-6 pt-10 font-bold">Login</h1>
