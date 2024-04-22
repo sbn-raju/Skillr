@@ -2,6 +2,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
 
 //Configuration of the middlewares
 dotenv.config();
@@ -30,6 +31,7 @@ const app = express();
 //MiddleWares using 
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors());
 
 
 //App is listening
@@ -41,7 +43,7 @@ app.listen(process.env.PORT||8080,()=>{
 app.get("/",indexRoute);
 app.post("/api/StudentRegister",route);
 app.post("/api/FacultyRegister",route);
-app.post("/login",loginRoute);
+app.post("/api/login",loginRoute);
 
 
 

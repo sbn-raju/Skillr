@@ -5,13 +5,13 @@ import bcrypt from "bcryptjs";
 
 const loginController = async(req,res)=>{
     try{
-        const{email, password} = req.body;
-        if(!(email &&  password)){
+        const{username, password} = req.body;
+        if(!(username &&  password)){
         return res.status(404).json({
             message:"Provide Valid Input"
         });
         }
-        const notExsistinguser = await User.findOne({email});
+        const notExsistinguser = await User.findOne({username});
         if(!notExsistinguser){
             return res.status(404).json({
                 message:"User not Exist Please Register",

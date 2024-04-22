@@ -6,8 +6,8 @@ import FacultyUser  from "../models/facultyUser.models.js";
 
 const studentRegisterController = async(req,res)=>{    
     try{
-    const {username, firstname, lastname, email, password} = req.body;
-    if(!(username && firstname && lastname && email && password)){
+    const {username, fullname, email, password} = req.body;
+    if(!(username && fullname && lastname && email && password)){
          return res.status(404).json({message:"Data is not vald"});
     }
     const existingUser = await User.findOne({email, username});
@@ -17,8 +17,7 @@ const studentRegisterController = async(req,res)=>{
     const mEncryptPass = await bcrypt.hash(password, 10);
     const user = await User.create({
         username,
-        firstname,
-        lastname,
+        fullname,
         email,
         password : mEncryptPass,
     });
@@ -42,8 +41,8 @@ const studentRegisterController = async(req,res)=>{
 }
 const facultyRegisterController = async(req,res)=>{
     try{
-        const {username, firstname, lastname, email, password} = req.body;
-    if(!(username && firstname && lastname && email && password)){
+        const {username, fullname, email, password} = req.body;
+    if(!(username && fullname  && email && password)){
          return res.status(404).json({message:"Data is not vald"});
     }
     const existingUser = await FacultyUser.findOne({email, username});
@@ -53,8 +52,7 @@ const facultyRegisterController = async(req,res)=>{
     const mEncryptPass = await bcrypt.hash(password, 10);
     const facultyuser = await FacultyUser.create({
         username,
-        firstname,
-        lastname,
+        fullname,
         email,
         password : mEncryptPass,
     });

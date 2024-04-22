@@ -3,6 +3,6 @@ import loginController from "../controllers/login.controllers.js";
 
 const route = Router();
 
-route.post("/login",loginController);
+route.post("/api/login",loginController);
 
 export default route;
