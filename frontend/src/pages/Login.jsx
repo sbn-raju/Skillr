@@ -1,13 +1,15 @@
-  import React, { useEffect, useState } from "react";
+  import React, { useState } from "react";
   import { FcGoogle } from "react-icons/fc";
   import { FaFacebook } from "react-icons/fa";
   import { FaSquareGithub } from "react-icons/fa6";
   import Navbar from "../components/Navbar";
   import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
   const Login = () => {
   let [username, setUsername] = useState("");
   let [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   let handleChangeForUsername = (event) =>{
       setUsername(event.target.value);
@@ -25,11 +27,13 @@
         password
       })
       .then((response)=>{
-          console.log(response.data);
-          console.log("Logged In");
+          if(response.data.success){
+            navigate("/home");
+          }
       }).catch((err)=>{
-        console.log("Internal Server error");
         console.log(err.response.data.message);
+        console.log("Internal Server error");
+       
       });
 
   }
