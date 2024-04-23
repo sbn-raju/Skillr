@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import CoursesCard from '../components/CoursesCard'
-import JavaLogo from "../assets/Java-logo.svg"
+import Footer from '../components/Footer'
+import heroImage from "../assets/hero.png"
 
 const Home = () => {
   return (
@@ -10,12 +11,13 @@ const Home = () => {
     <div className='w-full h-full mt-10'>
         {/* heroSection */}
         <div className='w-full h-80 flex justify-center items-center'>
-            <div className='w-5/6 h-full bg-blue-300 rounded-3xl'>
+            <div className='w-5/6 h-full bg-blue-300 rounded-3xl flex justify-center items-center'>
               <div className='w-1/2 h-full pl-5 pt-3'>
                 <h1 className='text-5xl font-bold'>Skillr Courses For All Standards</h1>
                 <p></p>
               </div>
-              <div className='w-1/2 h-full'>
+              <div className='w-1/2 h-full pl-11'>
+                <img src={heroImage} className='h-80'/>
               </div>
             </div>
         </div>
@@ -57,6 +59,7 @@ const Home = () => {
             <CoursesCard/>
         </div>
     </div>
+    <Footer/>
     </>
   )
 }
