@@ -1,8 +1,10 @@
 import { Router } from "express";
-import loginController from "../controllers/login.controllers.js";
+import {studentLoginController, facultyLoginController} from "../controllers/login.controllers.js";
 
-const route = Router();
 
-route.post("/api/login",loginController);
+const loginroute = Router();
 
-export default route;
+loginroute.post("/api/studentLogin",studentLoginController);
+loginroute.post("/api/facultyLogin", facultyLoginController);
+
+export default loginroute;

@@ -22,7 +22,7 @@ import { useNavigate } from "react-router-dom";
 
   const formSubmit = (event)=>{
     event.preventDefault();
-      axios.post("/api/login",{
+      axios.post("/api/studentLogin",{
         username,
         password
       })
@@ -42,7 +42,7 @@ import { useNavigate } from "react-router-dom";
       <Navbar/>
         <div className="w-full h-full flex justify-center items-center mt-10 mb-20">
           <div className="w-1/3 h-full flex justify-center items-center flex-col border-2 border-gray-700 rounded-2xl">
-            <h1 className="text-4xl pb-6 pt-10 font-bold">Login</h1>
+            <h1 className="text-4xl pb-6 pt-10 font-bold">Login as Student</h1>
             <div className="w-4/5 h-4 flex justify-start items-center">
               <p className="font-semibold">Username</p>
             </div>

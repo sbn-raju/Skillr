@@ -7,7 +7,7 @@ import FacultyUser  from "../models/facultyUser.models.js";
 const studentRegisterController = async(req,res)=>{    
     try{
     const {username, fullname, email, password} = req.body;
-    if(!(username && fullname && lastname && email && password)){
+    if(!(username && fullname  && email && password)){
          return res.status(404).json({message:"Data is not vald"});
     }
     const existingUser = await User.findOne({email, username});
@@ -32,7 +32,9 @@ const studentRegisterController = async(req,res)=>{
     );
     User.token = token
     User.password = undefined
-    return res.status(200).json(user);
+    return res.status(200).json({
+        message:"User Created",
+    });
     }
     catch(err){
         console.log(err);
@@ -43,7 +45,7 @@ const facultyRegisterController = async(req,res)=>{
     try{
         const {username, fullname, email, password} = req.body;
     if(!(username && fullname  && email && password)){
-         return res.status(404).json({message:"Data is not vald"});
+         return res.status(404).json({message:"Data is not valid"});
     }
     const existingUser = await FacultyUser.findOne({email, username});
         if(existingUser){
@@ -67,7 +69,9 @@ const facultyRegisterController = async(req,res)=>{
     );
     FacultyUser.token = token
     FacultyUser.password = undefined
-    return res.status(200).json(facultyuser);
+    return res.status(200).json({
+        message:"User Created",
+    });
     }
     catch(err){
        console.log(err);

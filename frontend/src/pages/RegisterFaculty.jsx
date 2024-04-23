@@ -4,12 +4,14 @@ import { FaFacebook } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import Navbar from "../components/Navbar";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const RegisterFaculty = () => {
   let [username, setUsername] = useState("");
   let [password, setPassword] = useState("");
   let [fullname, setFullname] = useState("");
   let [email, setEmail] = useState("");
+  let navigate = useNavigate();
 
   let handleUserNameChange = (event) => {
     setUsername(event.target.value);
@@ -31,7 +33,10 @@ const RegisterFaculty = () => {
       email,
       password
      }).then((response)=>{
-      console.log(response);
+      if(response){
+        console.log(response);
+        navigate('/home');
+      }
      }).catch((error)=>{
       console.log(error.response.data.message)
      })
