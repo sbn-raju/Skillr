@@ -10,8 +10,6 @@ const articalSchema = new mongoose.Schema({
     artical_title:{
         type: String,
         required : true,
-        unique: true,
-        lowercase: true,
         index: true,
     },
     artical_des:{
@@ -23,7 +21,5 @@ const articalSchema = new mongoose.Schema({
 {
     timestamps:true,
 });
-
 const Artical = new mongoose.model("Artical",articalSchema);
-
 export default Artical;

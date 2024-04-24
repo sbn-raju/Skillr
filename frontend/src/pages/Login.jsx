@@ -33,6 +33,7 @@ import { useNavigate } from "react-router-dom";
       }).catch((err)=>{
         console.log(err.response.data.message);
         console.log("Internal Server error");
+        navigate("/student/register");
        
       });
 

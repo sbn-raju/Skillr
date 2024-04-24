@@ -2,7 +2,14 @@ import React from "react";
 import Footer from "../components/Footer";
 import LoginNavbar from "../components/LoginNavbar";
 
+import { useNavigate } from "react-router-dom";
+
 const CoursesDetails = () => {
+  let navigate = useNavigate();
+  const redirect = ()=>{
+    navigate("/pages.razorpay.com/pl_Ma7DryGb4l8Ylp/view")
+  }
+
   return (
     <>
       <LoginNavbar />
@@ -33,7 +40,7 @@ const CoursesDetails = () => {
             </ul>
           </div>
           <div className="w-full h-96">
-            <button className="p-3 bg-blue-700 text-white mr-4 w- rounded-lg hover:bg-indigo-900">
+          <button onClick={redirect} className="p-3 bg-blue-700 text-white mr-4 w- rounded-lg hover:bg-indigo-900">
               Buy Course
             </button>
           </div>

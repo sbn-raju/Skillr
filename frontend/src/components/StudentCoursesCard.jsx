@@ -1,7 +1,14 @@
 import React from 'react'
 import logo from "../assets/Java-logo.svg"
+import { useNavigate } from 'react-router-dom'
+
 
 const StudentCoursesCard = () => {
+  const navigate = useNavigate();
+  let navigateToCoursePlays =(event)=>{
+       event.preventDefaulter();
+       navigate("/courses/play");
+  }
   return (
     <>
         <div className='w-96 h-96 rounded-2xl  m-4 bg-slate-300 hover:shadow-xl hover:shadow-cyan-500/50'>
@@ -16,7 +23,7 @@ const StudentCoursesCard = () => {
             </div>
             <div className='w-full h-9 pl-4 pr-4'>
                 <button className='p-2 bg-orange-600 rounded-lg w-30 h-10 mr-6 font-semibold text-white'>Course Details</button>
-                <button className='p-2 bg-orange-600 rounded-lg w-30 h-10 mr-6 font-semibold text-white'>Continue Playing</button>
+                <button onClick={navigateToCoursePlays} className='p-2 bg-orange-600 rounded-lg w-30 h-10 mr-6 font-semibold text-white'>Continue Watching</button>
             </div>
         </div>
         </>

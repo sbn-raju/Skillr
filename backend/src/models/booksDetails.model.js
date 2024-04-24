@@ -10,9 +10,7 @@ const bookSchema = new mongoose.Schema({
     book_title:{
         type: String,
         required : true,
-        unique: true,
-        lowercase: true,
-        index: true,
+
     },
     book_des:{
         type:String,
@@ -20,7 +18,6 @@ const bookSchema = new mongoose.Schema({
     },
     book_Image:{
         type:String,
-        required:true
     },
 },
 {
