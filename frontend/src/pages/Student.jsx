@@ -9,9 +9,9 @@ const Student = () => {
   return (
     <>
      <Navbar/>
-     <div className="w-full h-full mt-10 mb-10">
+     <div className="w-full h-full pt-5 pb-5 bg-black">
        <div className="w-full h-80 flex justify-center items-center">
-          <div className="w-5/6 h-full bg-blue-300 rounded-3xl flex justify-center items-center">
+          <div className="w-5/6 h-full bg-blue-400 rounded-3xl flex justify-center items-center">
             <div className="w-1/2 h-full flex justify-center items-center">
               <div className="w-1/2 h-4/5 bg-red-600 rounded-xl">
                 <img src={profilePic} className="w-full h-full rounded-xl" />
@@ -35,11 +35,17 @@ const Student = () => {
                   Computing, C, C++, and HTML.
                 </p>
               </div>
+              <div className="w-full h-10 mb-8">
+                <button className="w-40 h-10 bg-blue-700 rounded-xl mr-2 hover:bg-blue-900 text-white">
+                  Update Profile
+                </button>
+            
+              </div>
             </div>
           </div>
         </div>
         <div className='w-full h-20 flex justify-center items-center mt-10'>
-             <h2 className='w-4/5 h-full text-5xl font-semibold'>My Learning Paths</h2>
+             <h2 className='w-4/5 h-full text-5xl font-semibold text-white'>My Learning Paths</h2>
         </div>
         <div className='w-full h-auto  mb-10 flex justify-center items-center flex-wrap'>
             <StudentCoursesCard/>
@@ -47,7 +53,7 @@ const Student = () => {
             <StudentCoursesCard/>
         </div>
         <div className='w-full h-20 flex justify-center items-center mt-10'>
-             <h2 className='w-4/5 h-full text-5xl font-semibold'>Purchased Books</h2>
+             <h2 className='w-4/5 h-full text-5xl font-semibold  text-white'>Purchased Books</h2>
         </div>
         <div className='w-full h-auto  mb-10 flex justify-center items-center flex-wrap'>
             <StudentBooksCard/>
@@ -55,7 +61,7 @@ const Student = () => {
             <StudentBooksCard/>
         </div>
         <div className='w-full h-20 flex justify-center items-center mt-10'>
-             <h2 className='w-4/5 h-full text-5xl font-semibold'>My Douts</h2>
+             <h2 className='w-4/5 h-full text-5xl font-semibold  text-white'>My Douts</h2>
         </div>
         <div>
            <div className='w-full h-80 flex justify-center items-center flex-col'>

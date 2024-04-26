@@ -94,7 +94,7 @@ const LoginFaculty = () => {
               </div>
               <div className="w-4/5 h-16 flex justify-center items-center ">
                 <p>Don't have Account? Create Account</p>
-                <h2 className="text-1xl font-bold text-blue-700">&nbsp;Sign Up</h2>
+                <Link to="/faculty/register"><h2 className="text-1xl font-bold text-blue-700 hover:cursor-pointer">&nbsp;Sign Up</h2></Link>
               </div>
             </div>
           </div>

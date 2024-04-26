@@ -8,7 +8,7 @@ const LoginHome = () => {
   return (
     <>
     <LoginNavbar/>
-    <div className='w-full h-full mt-10'>
+    <div className='w-full h-full pt-5 pb-5 bg-black'>
         {/* heroSection */}
         <div className='w-full h-80 flex justify-center items-center'>
             <div className='w-5/6 h-full bg-blue-300 rounded-3xl flex justify-center items-center'>
@@ -23,21 +23,21 @@ const LoginHome = () => {
         </div>
         <div className='w-full h-40 flex justify-center items-center mt-20'>
         <div className='w-4/5 h-40 flex justify-center items-center flex-wrap'>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-black font-bold '>JAVA</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-black font-bold '>PYTHON</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-black font-bold '>MERN STACK</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-black font-bold '>JAVASCRIPT</button>
-            <button className='border-2 border-indigo-500 p-4 mr-6 w-40 rounded-xl text-black font-bold ' >C++</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-black font-bold '>JAVA</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-black font-bold '>PYTHON</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-black font-bold '>MERN STACK</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-black font-bold '>JAVASCRIPT</button>
-            <button className='border-2 border-indigo-500 p-4 mr-6 w-40 rounded-xl text-black font-bold '>And More...</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>JAVA</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>PYTHON</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>MERN STACK</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>JAVASCRIPT</button>
+            <button className='border-2 border-indigo-500 p-4 mr-6 w-40 rounded-xl text-white font-bold ' >C++</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>JAVA</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>PYTHON</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>MERN STACK</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>JAVASCRIPT</button>
+            <button className='border-2 border-indigo-500 p-4 mr-6 w-40 rounded-xl text-white font-bold '>And More...</button>
         </div>
         </div>
 
         <div className='w-full h-20 flex justify-center items-center mt-10'>
-             <h2 className='w-4/5 h-full text-5xl'>Our Courses</h2>
+             <h2 className='w-4/5 h-full text-5xl text-white'>Our Courses</h2>
         </div>
         <div className='w-full h-auto mt-10 mb-10 flex justify-center items-center flex-wrap'>
             <CoursesCard/>
@@ -48,7 +48,7 @@ const LoginHome = () => {
             <CoursesCard/>
         </div>
         <div className='w-full h-20 flex justify-center items-center mt-10'>
-             <h2 className='w-4/5 h-full text-5xl'>Our Courses</h2>
+             <h2 className='w-4/5 h-full text-5xl text-white'>Our Courses</h2>
         </div>
         <div className='w-full h-auto mt-10 mb-10 flex justify-center items-center flex-wrap'>
             <CoursesCard/>
