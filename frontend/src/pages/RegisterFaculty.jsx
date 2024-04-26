@@ -45,15 +45,15 @@ const RegisterFaculty = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full h-full flex justify-center items-center mt-10 mb-20">
+      <div className="w-full h-full flex justify-center items-center pt-10 pb-20 bg-black">
         <form
           onSubmit={formSubmit}
           className="w-1/3 h-full flex justify-center items-center flex-col border-2 border-gray-700 rounded-2xl"
         >
-          <h1 className="text-4xl pb-6 pt-10 font-bold">Sign in as Faculty</h1>
+          <h1 className="text-4xl pb-6 pt-10 font-bold text-white">Sign in as Faculty</h1>
 
           <div className="w-4/5 h-4 flex justify-start items-center">
-            <p className="font-semibold">Username</p>
+            <p className="font-semibold text-white">Username</p>
           </div>
           <input
             type="text"
@@ -62,11 +62,11 @@ const RegisterFaculty = () => {
             value={username}
             onChange={handleUserNameChange}
             placeholder="Enter your Username"
-            className="lable-username w-4/5 h-8 rounded-xl p-6 mb-8 mt-4 border-2 border-indigo-800 focus:outline-none valid:border-lime-700"
+            className="lable-username w-4/5 h-8 rounded-xl p-6 mb-8 mt-4 border-4 border-blue-600 focus:outline-none valid:border-lime-700"
             required
           />
           <div className="w-4/5 h-4 flex justify-start items-center">
-            <p className="font-semibold">Fullname</p>
+            <p className="font-semibold text-white">Fullname</p>
           </div>
           <input
             type="text"
@@ -75,11 +75,11 @@ const RegisterFaculty = () => {
             value={fullname}
             onChange={handleFullNameChange}
             placeholder="Enter your Fullname"
-            className="lable-password w-4/5 h-8 rounded-xl p-6 mb-8 mt-4 border-2 border-indigo-800 focus:outline-none valid:border-lime-700"
+            className="lable-password w-4/5 h-8 rounded-xl p-6 mb-8 mt-4 border-4 border-blue-600 focus:outline-none valid:border-lime-700"
             required
           />
           <div className="w-4/5 h-4 flex justify-start items-center">
-            <p className="font-semibold">Email</p>
+            <p className="font-semibold text-white">Email</p>
           </div>
           <input
             type="email"
@@ -88,11 +88,11 @@ const RegisterFaculty = () => {
             value={email}
             onChange={handleEmailChange}
             placeholder="Enter your email"
-            className="lable-username w-4/5 h-8 rounded-xl p-6 mb-8 mt-4 border-2 border-indigo-800 focus:outline-none valid:border-lime-700"
+            className="lable-username w-4/5 h-8 rounded-xl p-6 mb-8 mt-4 border-4 border-blue-600 focus:outline-none valid:border-lime-700"
             required
           />
           <div className="w-4/5 h-4 flex justify-start items-center">
-            <p className="font-semibold">Password</p>
+            <p className="font-semibold text-white">Password</p>
           </div>
           <input
             type="password"
@@ -101,7 +101,7 @@ const RegisterFaculty = () => {
             value={password}
             onChange={handlePasswordChange}
             placeholder="Enter your Password"
-            className="lable-password w-4/5 h-8 rounded-xl p-6 mb-2 mt-4 border-2 border-indigo-800 focus:outline-none valid:border-lime-700"
+            className="lable-password w-4/5 h-8 rounded-xl p-6 mb-2 mt-4 border-4 border-blue-600 focus:outline-none valid:border-lime-700"
             required
           />
           <button
@@ -111,7 +111,7 @@ const RegisterFaculty = () => {
             Sign In
           </button>
           <div className="w-4/5 h-8">
-            <p>or Sign up with..</p>
+            <p className="text-white">or Sign up with..</p>
           </div>
           <div className="w-4/5 h-16 flex justify-center items-center flex-row mb-6">
             <span className="text-5xl mr-8">
@@ -120,12 +120,12 @@ const RegisterFaculty = () => {
             <span className="text-5xl mr-8 text-blue-600">
               <FaFacebook />
             </span>
-            <span className="text-5xl mr-8">
+            <span className="text-5xl mr-8 text-white">
               <FaSquareGithub />
             </span>
           </div>
           <div className="w-4/5 h-16 flex justify-center items-center ">
-            <p>Already have an Account?</p>
+            <p className="text-white">Already have an Account?</p>
             <h2 className="text-1xl font-bold text-blue-700">&nbsp;Login</h2>
           </div>
         </form>

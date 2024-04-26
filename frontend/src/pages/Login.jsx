@@ -41,11 +41,11 @@ import { useNavigate } from "react-router-dom";
     return (
       <>
       <Navbar/>
-        <div className="w-full h-full flex justify-center items-center mt-10 mb-20">
+        <div className="w-full h-full flex justify-center items-center pt-10 pb-20 bg-black">
           <div className="w-1/3 h-full flex justify-center items-center flex-col border-2 border-gray-700 rounded-2xl">
-            <h1 className="text-4xl pb-6 pt-10 font-bold">Login as Student</h1>
+            <h1 className="text-4xl pb-6 pt-10 font-bold text-white">Login as Student</h1>
             <div className="w-4/5 h-4 flex justify-start items-center">
-              <p className="font-semibold">Username</p>
+              <p className="font-semibold text-white">Username</p>
             </div>
             <input
               type="text"
@@ -54,11 +54,11 @@ import { useNavigate } from "react-router-dom";
               value={username}
               placeholder="Enter your Username"
               onChange={handleChangeForUsername}
-              className="lable-username w-4/5 h-8 rounded-xl p-6 mb-8 mt-4 border-2 border-indigo-800 focus:outline-none valid:border-lime-700"
+              className="lable-username w-4/5 h-8 rounded-xl p-6 mb-8 mt-4 border-4 border-blue-600 focus:outline-none valid:border-lime-700"
               required
             />
             <div className="w-4/5 h-4 flex justify-start items-center">
-              <p className="font-semibold">Password</p>
+              <p className="font-semibold text-white">Password</p>
             </div>
             <input
               type="password"
@@ -67,7 +67,7 @@ import { useNavigate } from "react-router-dom";
               value={password}
               onChange={handleChangeForPassword}
               placeholder="Enter your Password"
-              className="lable-password w-4/5 h-8 rounded-xl p-6 mb-2 mt-4 border-2 border-indigo-800 focus:outline-none valid:border-lime-700"
+              className="lable-password w-4/5 h-8 rounded-xl p-6 mb-2 mt-4 border-4 border-blue-600 focus:outline-none valid:border-lime-300"
               required
             />
             <div className="w-4/5 h-4 rounded-xl mb-4 mt-1 flex justify-end">
@@ -81,7 +81,7 @@ import { useNavigate } from "react-router-dom";
               Login
             </button>
             <div className="w-4/5 h-8">
-              <p>or Login with..</p>
+              <p className="text-white">or Login with..</p>
             </div>
             <div className="w-4/5 h-14 flex justify-center items-center flex-row mb-6">
               <span className="text-5xl mr-8">
@@ -90,12 +90,12 @@ import { useNavigate } from "react-router-dom";
               <span className="text-5xl mr-8 text-blue-600">
                 <FaFacebook />
               </span>
-              <span className="text-5xl mr-8">
+              <span className="text-5xl mr-8 text-white">
                 <FaSquareGithub />
               </span>
             </div>
             <div className="w-4/5 h-16 flex justify-center items-center ">
-              <p>Don't have Account? Create Account</p>
+              <p className="text-white">Don't have Account? Create Account</p>
               <h2 className="text-1xl font-bold text-blue-700">&nbsp;Sign Up</h2>
             </div>
           </div>
