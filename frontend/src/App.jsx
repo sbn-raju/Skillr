@@ -10,6 +10,10 @@ import LoginHome from "./pages/LoginHome";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CoursesDetails from "./pages/CoursesDetails";
 import LoginFaculty from "./pages/LoginFaculty";
+import MentorFaculty from "./pages/MentorFaculty";
+import InformationPageFaculty from "./pages/InformationPageFaculty";
+import LaunchCourseForms from "./pages/LaunchCourseForms";
+import LaunchBookForms from "./pages/LaunchBookForms";
 
 const App = () => {
   return (
@@ -22,10 +26,11 @@ const App = () => {
         <Route path="/login" element={<Login/>}/>
         <Route path="/login/faculty" element={<LoginFaculty/>}/>
         <Route path="/home" element={<LoginHome />}/>
-        <Route path="/faculty" element={<Faculty />}/>
+        <Route path="/faculty" element={<MentorFaculty />}/>
         <Route path="/profile" element={<Student />} />
         <Route path="/courses/details" element={<CoursesDetails />} />
         <Route path="/courses/play" element={<CoursesPlay />} />
+        <Route path="/facultyMentor" element={<LaunchCourseForms />} />
       </Routes>
     </BrowserRouter>
     </>

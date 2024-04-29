@@ -45,7 +45,7 @@ const Navbar = () => {
               <GiTeacher />
             </span>
             <span className="text-xl text-white mr-8 hover:cursor-pointer">
-              <Link to="/faculty/register">Faculty</Link>
+              <Link to="/facultyMentor">Faculty</Link>
             </span>
           </div>
         </div>

@@ -29,15 +29,15 @@ const Home = () => {
         </div>
         <div className='w-full h-40 flex justify-center items-center mt-20'>
         <div className='w-4/5 h-40 flex justify-center items-center flex-wrap'>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>JAVA</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>PYTHON</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>MERN STACK</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>JAVASCRIPT</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>Java</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>Python</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>MERN Stack</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>JavaScript</button>
             <button className='border-2 border-indigo-500 p-4 mr-6 w-40 rounded-xl text-white font-bold ' >C++</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>JAVA</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>PYTHON</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>MERN STACK</button>
-            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>JAVASCRIPT</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>C Language</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>AI</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>Java Full Stack</button>
+            <button className='border-2 border-indigo-500 p-4 mr-20 w-40 rounded-xl text-white font-bold '>AWS</button>
             <button className='border-2 border-indigo-500 p-4 mr-6 w-40 rounded-xl text-white font-bold '>And More...</button>
         </div>
         </div>
@@ -67,7 +67,7 @@ const Home = () => {
         </div>
     </div>
     <div className='w-full h-1/5 bg-black flex justify-center items-center'>
-        <p className='text-white'>Want to be the educator?<Link to="/faculty/register"><span className='text-blue-700'>&nbsp;Sign up</span></Link></p>
+        <p className='text-white'>Want to be the educator and teach?<Link to="/faculty/register"><span className='text-blue-700'>&nbsp;Sign up</span></Link></p>
     </div>
     <Footer/>
     </>
