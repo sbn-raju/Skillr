@@ -14,6 +14,7 @@ import MentorFaculty from "./pages/MentorFaculty";
 import InformationPageFaculty from "./pages/InformationPageFaculty";
 import LaunchCourseForms from "./pages/LaunchCourseForms";
 import LaunchBookForms from "./pages/LaunchBookForms";
+import LaunchArticals from "./pages/LaunchArticals";
 
 const App = () => {
   return (
@@ -30,7 +31,7 @@ const App = () => {
         <Route path="/profile" element={<Student />} />
         <Route path="/courses/details" element={<CoursesDetails />} />
         <Route path="/courses/play" element={<CoursesPlay />} />
-        <Route path="/facultyMentor" element={<LaunchCourseForms />} />
+        <Route path="/facultyMentor" element={<LaunchArticals />} />
       </Routes>
     </BrowserRouter>
     </>

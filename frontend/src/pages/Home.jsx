@@ -5,6 +5,8 @@ import Footer from '../components/Footer'
 import heroImage from "../assets/hero.png"
 import FacultyIntoCard from '../components/FacultyIntoCard'
 import { Link } from 'react-router-dom'
+import courseData from '../SampleData/CourseCard'
+
 
 const Home = () => {
   return (
@@ -46,13 +48,7 @@ const Home = () => {
              <h2 className='w-4/5 h-full text-5xl  text-white'>Our Courses</h2>
         </div>
         <div className='w-full h-auto mt-10 mb-10 flex justify-center items-center flex-wrap'>
-           
-            <CoursesCard/>
-            <CoursesCard/>
-            <CoursesCard/>
-            <CoursesCard/>
-            <CoursesCard/>
-            <CoursesCard/>
+            <CoursesCard CourseData={courseData}/>
         </div>
         <div className='w-full h-20 flex justify-center items-center mt-10'>
              <h2 className='w-4/5 h-full text-5xl text-white'>Our Mentors And Faculty</h2>

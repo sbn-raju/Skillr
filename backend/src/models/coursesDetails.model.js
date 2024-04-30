@@ -10,9 +10,21 @@ const courseSchema = new mongoose.Schema({
     course_title:{
         type: String,
         required : true,
-       
     },
     course_des:{
+        type:String,
+        required:true
+    },
+    courseFeatureOne:{
+        type:String
+    },
+    coursefeatureTwo:{
+        type:String
+    },
+    courseFeatureThree:{
+        type:String
+    },
+    thumbnail:{
         type:String,
         required:true
     },
