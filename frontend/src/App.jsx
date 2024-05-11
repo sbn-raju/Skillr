@@ -21,17 +21,17 @@ const App = () => {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
+        {/* <Route path="/" element={<Home/>}></Route>
         <Route path="/student/register" element={ <RegisterStudent />}/>
-        <Route path="/faculty/register" element={ <RegisterFaculty />}/>
+        <Route path="/faculty/register" element={ <RegisterFaculty />}/> */}
         <Route path="/login" element={<Login/>}/>
-        <Route path="/login/faculty" element={<LoginFaculty/>}/>
+        {/* <Route path="/login/faculty" element={<LoginFaculty/>}/>
         <Route path="/home" element={<LoginHome />}/>
         <Route path="/faculty" element={<MentorFaculty />}/>
         <Route path="/profile" element={<Student />} />
         <Route path="/courses/details" element={<CoursesDetails />} />
         <Route path="/courses/play" element={<CoursesPlay />} />
-        <Route path="/facultyMentor" element={<LaunchArticals />} />
+        <Route path="/facultyMentor" element={<LaunchCourseForms />} /> */}
       </Routes>
     </BrowserRouter>
     </>

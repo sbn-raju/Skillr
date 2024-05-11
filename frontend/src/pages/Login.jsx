@@ -1,16 +1,15 @@
-  import React, { useState } from "react";
-  import { FcGoogle } from "react-icons/fc";
-  import { FaFacebook } from "react-icons/fa";
-  import { FaSquareGithub } from "react-icons/fa6";
-  import Navbar from "../components/Navbar";
-  import axios from 'axios';
+import React, { useState } from "react";
+import { FcGoogle } from "react-icons/fc";
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { useUserLoginMutation } from "../apis/auth.api";
 
   const Login = () => {
   let [username, setUsername] = useState("");
   let [password, setPassword] = useState("");
-  const navigate = useNavigate();
-
+  // const navigate = useNavigate();
+  const [userApiAuth] = useUserLoginMutation();
   let handleChangeForUsername = (event) =>{
       setUsername(event.target.value);
   }
@@ -22,21 +21,11 @@ import { useNavigate } from "react-router-dom";
 
   const formSubmit = (event)=>{
     event.preventDefault();
-      axios.post("/api/studentLogin",{
-        username,
-        password
-      })
-      .then((response)=>{
-          if(response.data.success){
-            navigate("/home");
-          }
-      }).catch((err)=>{
-        console.log(err.response.data.message);
-        console.log("Internal Server error");
-        navigate("/student/register");
-       
-      });
-
+    const userLogin = {
+      username,
+      password,
+    }
+    userApiAuth(userLogin);
   }
     return (
       <>
